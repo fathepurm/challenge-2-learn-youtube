@@ -1,0 +1,17 @@
+#To create project
+sls create --template aws-python3 --path hello-world-python
+
+# To deploy stack
+sls deploy
+
+#Deploy function changes
+sls deploy function -f hello
+
+#Invoke function from CLI
+sls invoke -f hello -l
+
+#Fetch logs from cloudwatch
+sls logs -f hello
+
+#Remove project
+sls remove
